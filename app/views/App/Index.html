@@ -1,29 +1,17 @@
-{{set . "title" "Drew | amiller.im"}}
+{{set . "title" "index | amiller.im"}}
 {{template "header.html" .}}
-
 <div class="container">
   <div class="row-fluid page">
-    <div class="span2 offset1 sidebar">
-
-      <!-- Navigation TODO Move this to a template at somepoint-->
-      <a href="/"><img alt="amiller.im - Building applications that help people in South Florida" src="/public/img/me.png"></a>
-      <h3><a href="/posts">blog</a></h3>
-      <h3><a href="/social">social</a></h3>
-      <h3><a href="/resume">resume</a></h3>
-      <h3><a href="/social">contact</a></h3>
-      <h3><a href="/links">links</a></h3>
-      <!-- End Navigation -->
-
-    </div>
+    {{template "navigation.html" .}}
     <div class="span6 post-content">
-
       <h1>amiller.im</h1>
-      <h3>Building applications that help people in South Florida <a href="/posts/" title="Fair warning: It's mostly about boring programming stuff">Read the blog</a></h3>
-
+      <h3>Building applications that help people succeed in South Florida <a href="/posts/" title="Fair warning: It's mostly about boring programming stuff">Read the blog</a></h3>
       <p>Hi, I am Andrew (Drew) Miller. I particularly like building applications in Go, Python, PHP, and C++. I received my Bachelors of Science in Computer Science from Florida State University in fall 2012.</p>
-      <p>Since then I worked at a Mobile Device Management company called Openpeak from 2013-2016, and more recently I will start working at Ultimate Software in Weston starting mid March.</p>
-      <p>This website is a work in progress and will be updated rapidly in the comming days/weeks (3/2/16)</p>
-      <hr>
+      <p>Since then I have worked for a Mobile Device Management company called Openpeak (2013-2016). More recently I will start working at Ultimate Software in Weston starting mid March.</p>
+      <p> For fun I like to tinker and hack with computer hardware and computer sciency projects. See <a href="/posts/weatherstation" title="weather station"> weather station</a> and <a href="/posts/homebrewrouter" title="homebrew router">homebrew router</a>.
+        I also enjoy playing <a href="http://www.dotabuff.com/players/4778078" title="DOTA"> DOTA</a>, snowboarding, and boating.</p>
+      <p>This website is a work in progress, links will be broken, under construction, and will be updated rapidly in the coming days/weeks (3/2/16)</p>
+        {{template "postfooter.html" .}}
     </div>
   </div>
 </div>

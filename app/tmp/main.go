@@ -40,6 +40,61 @@ func main() {
 					},
 				},
 			},
+			&revel.MethodType{
+				Name: "Social",
+				Args: []*revel.MethodArg{ 
+				},
+				RenderArgNames: map[int][]string{ 
+					14: []string{ 
+					},
+				},
+			},
+			&revel.MethodType{
+				Name: "Posts",
+				Args: []*revel.MethodArg{ 
+				},
+				RenderArgNames: map[int][]string{ 
+					18: []string{ 
+					},
+				},
+			},
+			&revel.MethodType{
+				Name: "Post",
+				Args: []*revel.MethodArg{ 
+					&revel.MethodArg{Name: "id", Type: reflect.TypeOf((*uint)(nil)) },
+				},
+				RenderArgNames: map[int][]string{ 
+					23: []string{ 
+					},
+				},
+			},
+			&revel.MethodType{
+				Name: "Contact",
+				Args: []*revel.MethodArg{ 
+				},
+				RenderArgNames: map[int][]string{ 
+					27: []string{ 
+					},
+				},
+			},
+			&revel.MethodType{
+				Name: "Resume",
+				Args: []*revel.MethodArg{ 
+				},
+				RenderArgNames: map[int][]string{ 
+					31: []string{ 
+					},
+				},
+			},
+			&revel.MethodType{
+				Name: "Links",
+				Args: []*revel.MethodArg{ 
+				},
+				RenderArgNames: map[int][]string{ 
+					35: []string{ 
+					},
+				},
+			},
 			
 		})
 	

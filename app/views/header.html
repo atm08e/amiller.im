@@ -3,16 +3,32 @@
 <html>
   <head lang="en">
     <title>{{.title}}</title>
+
+    <!-- Leave This. UTF for everything -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Keeping bootstrap css for now -->
     <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.css">
+
+    <!-- TODO favicon needs to change -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
+
+
+    <!-- TODO this is the style sheet we want to use entirely
+    <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet"> -->
+
+    <!-- We will need this sooner or later. Bootstrap.css I believe needs it for now. Throws error w.o -->
     <script src="/public/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Auto include other style sheets in public/css
     {{range .moreStyles}}
       <link rel="stylesheet" type="text/css" href="/public/{{.}}">
     {{end}}
+    -->
+    <!-- Auto include any js, yuck!
     {{range .moreScripts}}
       <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
     {{end}}
+     -->
   </head>
   <body>

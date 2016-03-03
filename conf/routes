@@ -4,7 +4,23 @@
 
 module:testrunner
 
+# Index
 GET     /                                       App.Index
+
+# Social
+GET     /social                                 App.Social
+
+# Links
+GET     /links                                 App.Links
+
+# Posts
+GET     /posts                                 App.Posts
+
+# Contact
+GET     /contact                                 App.Contact
+
+# Resume
+GET     /resume                                 App.Resume
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

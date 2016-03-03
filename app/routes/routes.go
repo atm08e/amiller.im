@@ -15,6 +15,50 @@ func (_ tApp) Index(
 	return revel.MainRouter.Reverse("App.Index", args).Url
 }
 
+func (_ tApp) Social(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Social", args).Url
+}
+
+func (_ tApp) Posts(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Posts", args).Url
+}
+
+func (_ tApp) Post(
+		id uint,
+		) string {
+	args := make(map[string]string)
+	
+	revel.Unbind(args, "id", id)
+	return revel.MainRouter.Reverse("App.Post", args).Url
+}
+
+func (_ tApp) Contact(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Contact", args).Url
+}
+
+func (_ tApp) Resume(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Resume", args).Url
+}
+
+func (_ tApp) Links(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Links", args).Url
+}
+
 
 type tStatic struct {}
 var Static tStatic
