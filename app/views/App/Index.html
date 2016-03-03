@@ -1,23 +1,21 @@
 {{set . "title" "Drew | amiller.im"}}
 {{template "header.html" .}}
 
-<header class="hero-unit" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <div class="hero-text">
-        <h1>It works!</h1>
-        <p></p>
-      </div>
-    </div>
-  </div>
-</header>
-
 <div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
+  <div class="row-fluid page">
+    <div class="span2 offset1 sidebar">
+      <a href="/"><img alt="amiller.im - Building applications that help people in South Florida" src="/public/img/me.png"></a>
+    </div>
+    <div class="span6 post-content">
+
+      <h1>amiller.im</h1>
+      <h2>Building applications that help people in South Florida <a href="/posts/" title="Fair warning: It's mostly about boring programming stuff">Read the blog</a></h2>
+
+      <p>Hi, I am Andrew (Drew) Miller. I particularly like building applications in Go, Python, PHP, and C++. I received my Bachelors of Science in Computer Science from Florida State University in fall 2012.</p>
+      <p>Since then I worked at a Mobile Device Management company called Openpeak from 2013-2016, and more recently I will start working at Ultimate Software in Weston starting mid March.</p>
+      <p>This website is a work in progress and will be updated rapidly in the comming days/weeks (3/2/16)</p>
+      <hr>
     </div>
   </div>
 </div>
-
 {{template "footer.html" .}}
