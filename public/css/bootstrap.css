@@ -5776,3 +5776,36 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+
+.postlist {
+
+}
+
+
+.postlist .post {
+
+}
+.postlist .post a {
+    color: #333333;
+}
+.postlist .post a:hover{
+    text-decoration: none;
+    color: #666;
+}
+
+.postlist .post .title{
+    line-height: 1;
+    font-size: 32px;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+
+}
+
+.postlist .post .subtitle{
+    font-size: 18px;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1;
+    /* margin-bottom: 4px; */
+    /* color: #333332; */
+}

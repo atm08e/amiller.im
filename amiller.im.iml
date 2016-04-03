@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="GOPATH &lt;amiller-app&gt;" level="project" />
+    <orderEntry type="library" name="GOPATH &lt;amiller.im&gt;" level="project" />
   </component>
 </module>

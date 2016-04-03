@@ -1,2 +1,24 @@
-<h3>BLOG UNDER CONSTRUCTION</h3>
-<a href="/"><img alt="amiller.im - Building applications that help people in South Florida" src="http://www.quickmeme.com/img/99/9903c7c14add3fd0758b7b5b80c24d48101f296f13ce34736799a82c71f61bc2.jpg"></a>
+{{set . "title" "Blog | amiller.im"}}
+{{template "header.html" .}}
+<div class="container">
+    <div class="row-fluid page">
+        {{template "navigation.html" .}}
+        <div class="span6">
+            <div class="postlist">
+                {{range .posts}}
+                    <div class="post">
+                        <a href="/posts/{{.PostId}}">
+                            <h1 class="title">{{.Title}}</h1>
+                            <h2 class="subtitle">{{.Subtitle}}</h2>
+                        </a>
+                    </div>
+                    <hr>
+                {{end}}
+            </div>
+            <div class="full-list center">
+                <a href="/posts/all">All the amiller.im posts</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{template "footer.html" .}}

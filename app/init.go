@@ -1,6 +1,10 @@
 package app
 
-import "github.com/revel/revel"
+import (
+	"github.com/revel/revel"
+	"amiller.im/app/models"
+)
+
 
 func init() {
 	// Filters is the default set of global filters.
@@ -22,6 +26,10 @@ func init() {
 	// register startup functions with OnAppStart
 	// ( order dependent )
 	// revel.OnAppStart(InitDB)
+	// Initialize our database connection on application startup
+	revel.OnAppStart(models.InitDatabaseConnection)
+
+	// TODO turn cache on
 	// revel.OnAppStart(FillCache)
 }
 

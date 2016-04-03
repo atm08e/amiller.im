@@ -15,6 +15,7 @@ GET     /links                                 App.Links
 
 # Posts
 GET     /posts                                 App.Posts
+GET     /posts/:id                             App.Post
 
 # Contact
 GET     /contact                                 App.Contact
